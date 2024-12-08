@@ -1,0 +1,570 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7463b24a09450254ba2e080a1c003170, type: 3}
+  m_Name: FinalStory Backup
+  m_EditorClassIdentifier: 
+  notes: '0 - Defult
+
+    1 - Happy
+
+    2 - Blush
+
+    3 - Shock
+
+    4 - Sad
+
+    5
+    - Angry'
+  sections:
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Hey you... Are you awake?
+      emote: 0
+      answers:
+      - answerLabel: Hmmhghm
+        nextElement: 1
+      - answerLabel: Hmm... My head hurts
+        nextElement: 1
+      - answerLabel: YAAAAAAAAWN
+        nextElement: 1
+  - dialogue:
+    - dialogue: "Good, you\u2019re awake... sorta! I was worried I\u2019d have to
+        kick you awake"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Not that I\u2019m allowed to kick a client. But it\u2019s an effective
+        method to wake people up most of the time"
+      emote: 0
+      answers:
+      - answerLabel: Where am I?
+        nextElement: 3
+      - answerLabel: Who are you?
+        nextElement: 2
+  - dialogue:
+    - dialogue: Oh yeah, how informal of me to not introduce myself...
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019m Marigold! Your guardian angel, and you\u2019re in Heaven!"
+      emote: 0
+      answers:
+      - answerLabel: HEAVEN... ANGEL... AM I DEAD?!?!
+        nextElement: 4
+      - answerLabel: Heaven? I didn't think I'd end up here
+        nextElement: 6
+      - answerLabel: Nice to meet you Marigold!
+        nextElement: 5
+  - dialogue:
+    - dialogue: Oh yeah, how informal of me not to give you a proper welcome...
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "You\u2019re in Heaven! And I\u2019m Marigold, your Guardian Angel!"
+      emote: 0
+      answers:
+      - answerLabel: HEAVEN... ANGEL... AM I DEAD?!?!
+        nextElement: 4
+      - answerLabel: Heaven? I didn't think I'd end up here
+        nextElement: 6
+      - answerLabel: Nice to meet you Marigold!
+        nextElement: 5
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Hahaaaa... Yeah, don\u2019t think too much about it"
+      emote: 0
+      answers:
+      - answerLabel: "WHAT DO YOU MEAN \u201CDONT THINK ABOUT IT\u201D?!?!\LI DIED!!!"
+        nextElement: 8
+      - answerLabel: Alright then... So how did I die?
+        nextElement: 7
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: You seem pretty nonchalant about the whole... being dead thing
+      emote: 0
+      answers:
+      - answerLabel: "OH SHIT, BEING IN HEAVEN MEANS I\u2019M DEAD, DOESN\u2019T
+          IT"
+        nextElement: 4
+      - answerLabel: I just want to know how I died
+        nextElement: 7
+      - answerLabel: "Knowing myself, I\u2019m not really surprised"
+        nextElement: 9
+  - dialogue:
+    - dialogue: "Surprisingly not many people go to the good ol\u2019 down under,
+        so to speak"
+      emote: 0
+    - dialogue: "Only the worst of the worst go there, y\u2019know, war criminals,
+        bigots and people who skipped original Dragon Ball"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: Everyone else is either sent to purgatory to get their stuff worked
+        out or sent right up here!
+      emote: 0
+      answers:
+      - answerLabel: "Shouldn\u2019t I have been sent to purgatory. I wanna have
+          a word about this whole \u201Cdeath\u201D thing"
+        nextElement: 10
+      - answerLabel: How did I die?
+        nextElement: 7
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Unlucky for you I\u2019m prohibited from telling you under the H.A.L.O
+        act of 1200 BCE"
+      emote: 0
+      answers:
+      - answerLabel: What's the H.A.L.O act?
+        nextElement: 11
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Trying to help people cope with death is the Purgatory departments
+        job
+      emote: 0
+      answers:
+      - answerLabel: "Why don\u2019t you send me there, I want to have a word about
+          this whole \u201Cbeing dead\u201D thing"
+        nextElement: 10
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Looking at your report and how you died, it doesn\u2019t shock me
+        that you aren't surprised"
+      emote: 0
+      answers:
+      - answerLabel: "I\u2019m shocked I managed to make it to heaven"
+        nextElement: 6
+      - answerLabel: "Come to think of it, I don\u2019t remember how I died"
+        nextElement: 7
+  - dialogue:
+    - dialogue: "You should thank the heavens you don\u2019t have much unfinished
+        business or questionable levels of sin"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Since you get a 1 way ticket to heaven! Well you can get a return
+        ticket but necromancy hasn\u2019t been too popular with the youth of late"
+      emote: 0
+      answers:
+      - answerLabel: Still not a fan of the death thing, can I at least know how
+          it happened
+        nextElement: 7
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "The \u2018Human After Life Order\u2019 act, used to keep those in
+        heaven in order, as human\u2019s finding out about their causes of death
+        lead to vengeful spirits"
+      emote: 0
+      answers:
+      - answerLabel: Vengeful spirits?
+        nextElement: 12
+  - dialogue:
+    - dialogue: "This is my first gig as a guardian angel so I\u2019m not all too
+        familiar with them"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019ve just been told I\u2019m lucky for not ever having to see
+        them when they were more common, before the H.A.L.O act was put in place"
+      emote: 0
+      answers:
+      - answerLabel: "Please tell me how i died, I swear won\u2019t become a vengeful
+          spirit"
+        nextElement: 13
+      - answerLabel: First gig? Is this your first time as an angel then?
+        nextElement: 17
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019m not going to break a sacred bond forged forged through
+        generations of angel\u2019s before me because of a \u201CPlease\u201D"
+      emote: 0
+      answers:
+      - answerLabel: Man, I really thought that would work
+        nextElement: 14
+      - answerLabel: Pretty please...?
+        nextElement: 15
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "You actually thought i\u2019d break that easily? Do I look like
+        an idiot"
+      emote: 0
+      answers:
+      - answerLabel: Yeah...
+        nextElement: 16
+      - answerLabel: No, you look like a model
+        nextElement: 18
+  - dialogue:
+    - dialogue: "Really, that\u2019s the best you got?"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019d respect if you attempted to bargain for the information,
+        but \u201CPretty Please\u201D, Do i look like an idiot?"
+      emote: 0
+      answers:
+      - answerLabel: Yeah...
+        nextElement: 16
+      - answerLabel: No, you look like a model
+        nextElement: 18
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "WOOOOW you\u2019re so rude, this is not what I wanted to deal with
+        for my first job as an angel"
+      emote: 0
+      answers:
+      - answerLabel: Is this your first time being a guardian angel?
+        nextElement: 17
+      - answerLabel: "Sorry, I\u2019m just joking about"
+        nextElement: 20
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Yeah! this is my first time as a guardian angel, I was really anxious
+        going into this!
+      emote: 0
+      answers:
+      - answerLabel: "Sorry, I\u2019m just joking about"
+        nextElement: 20
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Aww you\u2019re so sweet, still doesn\u2019t make up for taking
+        me as a fool, especially on my first day as an angel"
+      emote: 0
+      answers:
+      - answerLabel: Wait, is this your first time as an angel
+        nextElement: 17
+      - answerLabel: "the only fool here is me \u201Cfool\u201Ding for your beauty"
+        nextElement: 19
+  - dialogue:
+    - dialogue: "No I said \u201Cfool\u201D not fall, wrong word, although i appreciate
+        the word play..."
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "OOOOH YOU ARE TRYING TO FLIRT WITH ME ARN\u2019T YOU"
+      emote: 0
+      answers:
+      - answerLabel: "I hope it isn\u2019t blasphemous to say MY GOD YOU\u2019RE
+          HOT!"
+        nextElement: 38
+      - answerLabel: How could I not flirt, you look so pretty!
+        nextElement: 39
+      - answerLabel: Wow you're clueless, huh...
+        nextElement: 16
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "You didn\u2019t need to joke THAT much. I know i\u2019m not the
+        brightest tool in the shed, you don\u2019t have to remind me"
+      emote: 0
+      answers:
+      - answerLabel: Sorry once again
+        nextElement: 22
+      - answerLabel: "It\u2019s actually \u201Cthe sharpest tool in the...\u201D"
+        nextElement: 21
+  - dialogue:
+    - dialogue: YEAH I KNOW!!!
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019m trying to joke too but apparently its only fun when you
+        do it"
+      emote: 0
+      answers:
+      - answerLabel: Jeez, chill out
+        nextElement: 23
+      - answerLabel: "Apologies, I guess I\u2019m also a little dense , is everything
+          alright?"
+        nextElement: 23
+      - answerLabel: Yeah, it is only funny when I do it
+        nextElement: 24
+  - dialogue:
+    - dialogue: "It\u2019s fine, I\u2019m a little insecure about my intelligence,
+        so I joke about it myself"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: It just often tends to weigh me down when others joke about it. I
+        mainly joke so others will join in and affirm my own idea about myself, but
+        it still hurts when others do
+      emote: 0
+      answers:
+      - answerLabel: Jeez chill out, at least ask before you drop that heavy stuff
+          on me
+        nextElement: 23
+      - answerLabel: Well you arn't stupid, everyone is smart in their own way
+        nextElement: 29
+      - answerLabel: "On a more happy note, what do I do now that I\u2019m dead"
+        nextElement: 31
+  - dialogue:
+    - dialogue: Sorry, my emotions are a little all over the place at the moment
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "I\u2019ve gotten myself so worked up and stressed about this first
+        big new day as an angel thing"
+      emote: 0
+      answers:
+      - answerLabel: First day? Well your doing a great job for how stressed you
+          must be feeling
+        nextElement: 26
+      - answerLabel: "On a more happy note, what do I do now that I\u2019m dead"
+        nextElement: 31
+      - answerLabel: I don't care
+        nextElement: 27
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: UUUUUGH YOU ARE SO ANNOYING, GOD I WISH I HAD THE POWER TO SEND YOU
+        TO PURGATORY!!!
+      emote: 0
+      answers:
+      - answerLabel: "Didn\u2019t ask idiot, calm down, its not that deep"
+        nextElement: 25
+  - dialogue:
+    - dialogue: MAY THE HEAVENS CURSE YOU. NOW FUCK OFF AND TRY FIND A NEW ANGEL
+        YOU UNGRATEFUL SHIT!!!
+      emote: 0
+    - dialogue: '[ANGRY ENDING] Maybe try be a little nicer next time :)'
+      emote: 0
+    - dialogue: // Dev note, Endings aren't coded, the game will just repeat abruptly,
+        so give it another try and find a nicer ending you meanie
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Thank you! It\u2019s been a tough journey to get here and I just
+        don\u2019t want to mess it up at such a pivotal moment, it\u2019s easy to
+        feel like I don\u2019t have the smarts for it"
+      emote: 0
+      answers:
+      - answerLabel: "Just because you aren't generically smart doesn\u2019t mean
+          you aren't talented at what you do"
+        nextElement: 30
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Awe man... Forget I said anything
+      emote: 0
+      answers:
+      - answerLabel: "Can i get a different angel, You\u2019re too depressing"
+        nextElement: 28
+  - dialogue:
+    - dialogue: '*sniff* yeah let me see what I can do for you, just wait here...'
+      emote: 0
+    - dialogue: '[SAD ENDING] Maybe try be more considerate next time'
+      emote: 0
+    - dialogue: // Dev note, Endings aren't coded, the game will just repeat abruptly,
+        so give it another try and find a nicer ending you meanie
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Aww thank you, I did go to angel school for 2 years so even if im
+        not generically smart, I clearly got talent
+      emote: 0
+      answers:
+      - answerLabel: "Exactly, being good at boring generic study\u2019s doesn\u2019t
+          mean you aren't super talented"
+        nextElement: 30
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Awe stop it, that\u2019s really sweet of you to say!"
+      emote: 0
+      answers:
+      - answerLabel: I should probably stop before I start complimenting just how
+          amazing you look
+        nextElement: 39
+  - dialogue:
+    - dialogue: "I don\u2019t really know... The guardian angel job usually takes
+        much more time trying to help people cope with the \u201Cdying\u201D thingy"
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "So that\u2019s a lot of what I did preparing for this first angel
+        job.. I guess you could find a job or something around heaven"
+      emote: 0
+      answers:
+      - answerLabel: "You\u2019re first day on the job? I keep feeling like i need
+          to ask you about this for some unknown reason"
+        nextElement: 17
+      - answerLabel: A job, as what?
+        nextElement: 32
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "There\u2019s some angel school student who really needs a story
+        written for her video game about dating angles, she\u2019s really under pressure
+        and has overworked herself and could really use with the help"
+      emote: 0
+      answers:
+      - answerLabel: "A game about dating angels, that\u2019s a stupid idea"
+        nextElement: 33
+      - answerLabel: "She\u2019s struggling to write a story, Really? I mean it can\u2019t
+          be that hard"
+        nextElement: 34
+      - answerLabel: "Yeah I\u2019d love to help!"
+        nextElement: 35
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "We keep trying to tell her that but she\u2019s a little too far
+        in now"
+      emote: 0
+      answers:
+      - answerLabel: "Well I\u2019d love to help regardless!"
+        nextElement: 36
+  - dialogue:
+    - dialogue: "Well she is really over worked with more then just the story, it\u2019s
+        sorta weighed on her mental health, but luckily she has amazing people in
+        her life who helps with her work."
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: I just hope those people know how grateful I am... I mean umm...
+        how grateful she is to have those people in her life
+      emote: 0
+      answers:
+      - answerLabel: I heard that stutter...
+        nextElement: 36
+  - dialogue:
+    - dialogue: AMAZING! The developer already has a team of really amazing people
+        helping her, not only with the work but how she balances her work and life
+      emote: 0
+    - dialogue: "She has a hard time, but thanks to the people by her side, its made
+        her feel like she\u2019s able to relax, and even if it means the story wont
+        be as full as she wishes by the end..."
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "... those around her have made her proud of all the work she\u2019s
+        already put in"
+      emote: 0
+      answers:
+      - answerLabel: That was.. oddly deep
+        nextElement: 36
+  - dialogue:
+    - dialogue: "[DEV ENDING] Remember to take brakes, overworking yourself to a
+        high standard will only burn you in the end, you shouldn\u2019t feel afraid
+        to relax or ask for help"
+      emote: 0
+    - dialogue: // Dev note, Endings aren't coded, the game will just repeat abruptly,
+        so give it another try and avoid breaking the 4th wall
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "Oh wow that\u2019s a... little direct don\u2019t you think"
+      emote: 0
+      answers:
+      - answerLabel: Sorry, I meant to say you are really pretty!
+        nextElement: 39
+      - answerLabel: SORRY MOMMY SORRY MOMMY STEP ON ME PLEASE YOUR SO FUCKING HOT
+          UGH
+        nextElement: 38
+  - dialogue:
+    - dialogue: Ew
+      emote: 0
+    - dialogue: '[CMON... REALLY ENDING] NAH SCREW IT, this ain''t even an ending,
+        no dev note to retry the game this time. JUST DO ANYTHING ELSE!'
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Well thank you, I put a lot of effort into my outfit today!
+      emote: 0
+      answers:
+      - answerLabel: "not just you\u2019re outfit, but all of you is so stunning"
+        nextElement: 40
+  - dialogue:
+    - dialogue: Hehe, thank you! However, I must say quickly before you keep complimenting
+        me...
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: "... I\u2019m not allowed to hook up with any souls due to the H.A.L.O
+        act, so you may want to cut you\u2019re loses while you ahead and drop the
+        flirting"
+      emote: 0
+      answers:
+      - answerLabel: "Wait I can\u2019t sleep with you, what\u2019s the point"
+        nextElement: 38
+      - answerLabel: Who said anything about hooking up?! how about just a nice little
+          date first
+        nextElement: 41
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: "OH YEAH, sorry I jumped the gun a little there haha, I wouldn\u2019t
+        hate to go on a date with you, since I don\u2019t think 'a nice time out'
+        is prohibited under any act"
+      emote: 0
+      answers:
+      - answerLabel: Jumping...? gun...? Why do those words ring a bell??
+        nextElement: 42
+      - answerLabel: Awesome, lets go grab some coffee shall we!
+        nextElement: 43
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: UHHH UMM ,DONT THINK ABOUT IT, ITS PROBABLY NOTHING, SO HOW ABOUT
+        THAT DATE HUH, HAHA
+      emote: 0
+      answers:
+      - answerLabel: Odd...? Oh yeah, would you like to go grab some coffee
+        nextElement: 43
+  - dialogue:
+    - dialogue: "offee would be great! Lets go to my favourite coffee shop, its soooo
+        good! Azrael makes a bangin\u2019 pumpkin spiced latte!"
+      emote: 0
+    - dialogue: '[DATABLE ENDING] CONGRATS, YOU GOT YOURSELF A DATE! Who knows, maybe
+        in the future this will lead to a blossoming relationship!'
+      emote: 0
+    - dialogue: // Dev note, Endings aren't coded, the game will just repeat abruptly,
+        so give it another try and see what other endings you can find!
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []

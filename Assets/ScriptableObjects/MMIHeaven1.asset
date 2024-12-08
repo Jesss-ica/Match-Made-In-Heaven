@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7463b24a09450254ba2e080a1c003170, type: 3}
+  m_Name: MMIHeaven1
+  m_EditorClassIdentifier: 
+  sections:
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Hello there lost soul, are you lost by any chance
+      emote: 0
+      answers:
+      - answerLabel: "Lost soul, I mean It\u2019s kind of in the name that I\u2019m
+          a little lost"
+        nextElement: 1
+      - answerLabel: yes, who are you and where am I?
+        nextElement: 2
+      - answerLabel: AM I DEAD!?!!
+        nextElement: 3
+  - dialogue:
+    - dialogue: I know, its a pointless question but HR instructs I at least ask
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: Apparent "WHAT ARE YOU DOING HERE" isn't very angel like of me
+      emote: 0
+      answers:
+      - answerLabel: so... what AM I doing here?
+        nextElement: 2
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: Oh you are in Heaven and I'm your guardian angel, Marigold
+      emote: 1
+      answers:
+      - answerLabel: AM I DEAD!?!!
+        nextElement: 3
+      - answerLabel: Heaven? Angel? Am I Dead?
+        nextElement: 3
+      - answerLabel: Heaven, I didn't think i'd make it here.
+        nextElement: 4
+      - answerLabel: Oh nice to meet you  Marigold, I'm...
+        nextElement: 5
+  - dialogue: []
+    endAfterDialogue: 0
+    branchPoint:
+      question: haha yeaaaaaaah, don't think about it too much
+      emote: 0
+      answers:
+      - answerLabel: Oh okay... So how did I die?
+        nextElement: 7
+      - answerLabel: WHAT DO YOU MEAN "DON'T THINK ABOUT IT"
+        nextElement: 6
+  - dialogue:
+    - dialogue: Suprisingly, not many people go to the good 'ol down under, so to
+        speak
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: Only the most heinous people go there y'know, racists, homophobes,
+        sexists, politicians, the like!
+      emote: 0
+      answers:
+      - answerLabel: So how did I die?
+        nextElement: 7
+  - dialogue:
+    - dialogue: Don't worry I know your name, it's in your report I have riiiight...
+      emote: 0
+    endAfterDialogue: 0
+    branchPoint:
+      question: OH NO I LOST YOUR REPORT!!! It's the first day of the job and I've
+        already messed up!!
+      emote: 3
+      answers:
+      - answerLabel: It's fine, we all loose things, it's not the end of the world
+        nextElement: 8
+  - dialogue:
+    - dialogue: The more you ramble on about it, the more pointless dialogue paths
+        Jess has to write
+      emote: 5
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue:
+    - dialogue: The classic "How did it happen" question taught in Angel school.
+      emote: 1
+    - dialogue: Unlucky for you, I'm prohibited under the H.A.L.O act of 1200 BCE
+        to tell you the specifics of how you died.
+      emote: 0
+    endAfterDialogue: 1
+    branchPoint:
+      question: 
+      emote: 0
+      answers: []
+  - dialogue:
+    - dialogue: EXCEPT IT IS!!!!!!
+      emote: 4
+    endAfterDialogue: 1
+    branchPoint:
+      question: EXCEPT IT IS!!!!!!
+      emote: 4
+      answers:
+      - answerLabel: WHAT!!!!
+        nextElement: 13
